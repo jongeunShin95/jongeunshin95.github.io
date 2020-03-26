@@ -4,6 +4,7 @@ tags: [Algorithm, Programmers, level1]
 style: fill
 color: dark
 description: Programmers level1 k번째수
+comments: true
 ---
 
 
