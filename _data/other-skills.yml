@@ -1,7 +1,7 @@
 - name: Deep Learning
-  percentage: 30
+  percentage: 35
   color: info
 
 - name: Mathematics
-  percentage: 30
+  percentage: 35
   color: dark
