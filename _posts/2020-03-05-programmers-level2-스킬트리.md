@@ -1,6 +1,6 @@
 ---
 title: level2-스킬트리
-tags: [Algorithm, Programmers]
+tags: [Algorithm, Programmers, level2]
 style: 
 color: 
 description: Programmers level2 스킬트리

@@ -1,6 +1,6 @@
 ---
 title: level1-모의고사
-tags: [Algorithm, Programmers]
+tags: [Algorithm, Programmers, level1]
 style: fill
 color: success
 description: Programmers level1 모의고사

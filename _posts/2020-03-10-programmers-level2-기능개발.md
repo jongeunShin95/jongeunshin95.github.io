@@ -1,6 +1,6 @@
 ---
 title: level2-기능개발
-tags: [Algorithm, Programmers]
+tags: [Algorithm, Programmers, level2]
 style: fill
 color: warning
 description: Programmers level2 기능개발

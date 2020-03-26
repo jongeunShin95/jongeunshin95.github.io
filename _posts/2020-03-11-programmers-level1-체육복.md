@@ -1,6 +1,6 @@
 ---
 title: level1-체육복
-tags: [Algorithm, Programmers]
+tags: [Algorithm, Programmers, level1]
 style: fill
 color: dark
 description: Programmers level1 체육복
