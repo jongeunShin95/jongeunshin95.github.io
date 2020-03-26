@@ -8,7 +8,8 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-I am studying JS, C/C++, Python, Deep Learning, Mathematics...
+I am studying JS, C/C++, Python, Deep Learning, Mathematics...<br>
+Go site -> [mathematics site](https://jongeunshin95.github.io/mathematics-study/)
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
