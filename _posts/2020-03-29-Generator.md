@@ -15,7 +15,7 @@ comments: true
 
 ### 2-1. 값을 전달
 
-```Javascript
+```javascript
 function* setValue() {
     console.log(yield);
     console.log(yield);
