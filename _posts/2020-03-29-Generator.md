@@ -13,7 +13,7 @@ comments: true
 
 ## 2. Usage
 
-#### 2-1. 값을 전달
+* #### 2-1. 값을 전달
 
 ```javascript
 function* setValue() {
@@ -34,7 +34,7 @@ test.next(3);
         2
         3
 
-#### 2-2. 값을 받기
+* #### 2-2. 값을 받기
 
 ```javascript
 function* getValue() {
