@@ -21,8 +21,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css">
 
   <!-- Latex -->
-  <script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+
 
 </head>
