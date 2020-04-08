@@ -49,7 +49,7 @@ Supervisd Learning에서 사용되는 알고리즘은 다음과 같다.
 Unsupervised Learning에는 데이터를 학습하는데 있어서 데이터에 대한 레이블들이 존재하지 않는다. 즉, 해당 데이터들의 특징들을 추출해 학습을 함므로써 데이터들을 분류하는 것이다.
 대표적으로 Clustering, Dimensionality Reductino 등이 있다.
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/types_of_machine_learning/unsupervised_learning_example.png?raw=true" caption="Supervised Learning Example" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/types_of_machine_learning/unsupervised_learning_example.png?raw=true" caption="Unsupervised Learning Example" %}
 
 Unsupervised Learning에서 사용되는 알고리즘은 다음과 같다.
 
@@ -79,3 +79,12 @@ Unsupervised Learning에서 사용되는 알고리즘은 다음과 같다.
 
 ---
 
+##### 참조
+
+---
+
+* https://towardsdatascience.com/what-are-the-types-of-machine-learning-e2b9e5d1756f
+* https://stickie.tistory.com/43
+* https://bestpractice80.tistory.com/2
+* https://needjarvis.tistory.com/195
+* 
