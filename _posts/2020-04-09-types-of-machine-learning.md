@@ -87,4 +87,3 @@ Unsupervised Learning에서 사용되는 알고리즘은 다음과 같다.
 * https://stickie.tistory.com/43
 * https://bestpractice80.tistory.com/2
 * https://needjarvis.tistory.com/195
-* 
