@@ -84,6 +84,6 @@ Unsupervised Learning에서 사용되는 알고리즘은 다음과 같다.
 ---
 
 * [https://towardsdatascience.com/what-are-the-types-of-machine-learning-e2b9e5d1756f](https://towardsdatascience.com/what-are-the-types-of-machine-learning-e2b9e5d1756f)
-* https://stickie.tistory.com/43
-* https://bestpractice80.tistory.com/2
-* https://needjarvis.tistory.com/195
+* [https://stickie.tistory.com/43](https://stickie.tistory.com/43)
+* [https://bestpractice80.tistory.com/2](https://bestpractice80.tistory.com/2)
+* [https://needjarvis.tistory.com/195](https://needjarvis.tistory.com/195)
