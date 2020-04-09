@@ -78,6 +78,13 @@ Semi-supervised Learning의 경우는 레이블이 존재하는 데이터들과 
 
 ---
 
+Reinforcement Learning의 경우에는 앞서 나온 Supervised Learning과 Unsupervised Learning과는 매우 다르다. Supervised Learning와 Unsupervised Learning의 관계는 우리가 쉽게 확인할 수 있지만, Reinforcement Learning이 포함되면 이 관계들이 살짝 애매해진다. 또한, 해당 학습 기법이 머신러닝으로 분류되지 않은 적도 있다. 앞의 두 학습 기법은 단지 데이터들을 입력하기만 하면 컴퓨터가 알아서 학습을 하여 최적의 모델을 만들어 낸다. Reinforcement Learning의 경우에는 어떠한 Action이 취해지면 그 상황에서 보상이 최대가 되도록 하는 action을 취하는 방법을 배우는 것이다. 대표적으로 알파고가 있다. 알파고는 상대의 수에 대해 수많은 가상시뮬레이션을 통하여 이길 수 있는 방법을 찾아내는 것이다.
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/types_of_machine_learning/reinforcement_learning_flow.png?raw=true" caption="Reinforcement Learning Flow" %}
+
+
+
+
 ##### 참조
 
 ---
