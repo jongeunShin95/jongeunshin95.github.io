@@ -70,8 +70,7 @@ Unsupervised Learning에서 사용되는 알고리즘은 다음과 같다.
 
 ---
 
-Semi-supervised Learning의 경우는 데이터들에 대한 레이블들이 일부만 존재한다.
-
+Semi-supervised Learning의 경우는 레이블이 존재하는 데이터들과 존재하지 않는 데이터들을 동시에 사용하는 것이다. 대부분의 학습 데이터를 사용하게 될 경우에는 레이블이 없는 데이터들을 사용하는 경우가 더 많다. 만약 레이블이 있는 데이터를 통하여 학습을 시도하는데 이 데이터들의 양이 너무 적어 제대로 된 학습을 하지 못한는 경우에 해당 학습 기법을 이용하게 된다. 즉, 레이블이 존재하는 데이터들의 양이 너무 적을 때 레이블이 없는 데이터들을 더 추가하여 동시에 학습을 시키므로써, 조금 더 좋은 모델을 만들어 내는 것이다.
 
 <br>
 
@@ -87,3 +86,5 @@ Semi-supervised Learning의 경우는 데이터들에 대한 레이블들이 일
 * [https://stickie.tistory.com/43](https://stickie.tistory.com/43)
 * [https://bestpractice80.tistory.com/2](https://bestpractice80.tistory.com/2)
 * [https://needjarvis.tistory.com/195](https://needjarvis.tistory.com/195)
+* [https://jayhey.github.io/semi-supervised%20learning/2017/12/04/semisupervised_overview/](https://jayhey.github.io/semi-supervised%20learning/2017/12/04/semisupervised_overview/)
+* [https://jaeyung1001.tistory.com/89](https://jaeyung1001.tistory.com/89)
