@@ -37,6 +37,7 @@ Supervisd Learning에서 사용되는 알고리즘은 다음과 같다.
 * Decision Trees
 * Random Forests
 * Neural Network
+* Ensemble Learning
 
 해당 알고리즘들에 대한 설명은 각각 포스팅으로 추가할 것이다. (공부하여 추가할 것)
 
