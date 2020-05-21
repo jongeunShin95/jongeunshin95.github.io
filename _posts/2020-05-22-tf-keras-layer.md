@@ -42,6 +42,7 @@ image = x_train[0]
 plt.imshow(image, 'gray')
 plt.show()
 ```
+
 {% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/x_train.png?raw=true" caption="x_train[0] 이미지" %}
 
 
@@ -51,7 +52,8 @@ plt.show()
 result = y_train[0]
 print(result)
 ```
-    5
+    >>> 5
+
 
 보게 되면 x_train의 데이터에는 학습을 통하여 우리가 맞추어야 되는 문제들이 저장되어 있고, y_train의 경우에는 그 x_train의 답이 저장되어 있다.<br>
 이 mnist와 keras를 이용하여 데이터를 학습하기 위한 layer를 구축해 볼 것이다.
