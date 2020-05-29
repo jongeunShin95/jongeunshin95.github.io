@@ -59,11 +59,63 @@ print(result)
 이 mnist와 keras를 이용하여 데이터를 학습하기 위한 layer를 구축해 볼 것이다.
 <br>
 
-#### 입력
+#### tf.keras.layers.Conv2D
 
 ---
 
+저번에 Convolution Layer에서 본 것처럼 해당 데이터들에서 특징을 추출하는 layer이다.<br>
+[Tensorflow 문서](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D)에서 보게되면 여러 파라미터들이 존재한다. 여기서 filter, kernel_size, strides, padding, activation에 대해 설정하여 사용해 볼 것이다. 여기서 파라미터에 대한 설명은 [Convolution Layer](https://jongeunshin95.github.io/blog/convolution-layer)에서 다루었고 filters의 파라미터에 대해서만 다르게 적용하여 사용해 볼 것이다.
 
+```python
+tf.keras.layers.Conv2D(filters=3, kernel_size=(3, 3), strides=(1, 1), padding='SAME', activation='relu')
+```
+다음은 기본적인 layer를 구성하는 코드이다. <br>
+filters의 경우 해당 layer를 통과한 후 몇개의 filter를 만드는지 결정한다. 한번 filters를 다르게 하여 layer를 통과시킨 후 결과를 보겠다. 또한 다음 예제들을 실행할 때 activation은 설정하지 않고 activation의 경우에는 따로 설정을 하도록 하겠다.
+
+**layer에 사용될 데이터 설정**
+
+```python
+image = train_x[0]  # 학습용 데이터에서 첫 번째 데이터를 가지고온다.
+image = image[tf.newaxis, ..., tf.newaxis] # 필터 수와 채널 수를 설정해준다. (28, 28) -> (1, 28, 28, 1)
+image = tf.cast(image, dtype=tf.float32) # 데이터 타입을 변경해준다.
+image.shape
+```
+
+    >>> (1, 28, 28, 1)
+
+**filters=3인 layer**
+
+```python
+layer = tf.keras.layers.Conv2D(filters=3, kernel_size=(3, 3), strides=(1, 1), padding='SAME')
+output = layer(image)
+output.shape
+```
+
+    >>> TensorShape([1, 28, 28, 3])
+
+**filters=5인 layer**
+
+```python
+layer = tf.keras.layers.Conv2D(filters=5, kernel_size=(3, 3), strides=(1, 1), padding='SAME')
+output = layer(image)
+output.shape
+```
+
+    >>> TensorShape([1, 28, 28, 5])
+
+두 결과를 보게되면 layer를 통과한 데이터로 나오는 filter의 수가 3, 5로 되는 것을 볼 수 있다. 즉 kernel_size=(3, 3)인 3x3의 filter를 통과하는데 총 몇개의 filter를 통과하여 몇개의 결과로 나오는지를 정하는 것이다. <br>
+
+**layer를 통과한 후 이미지 시각화(filters=5)**
+
+```python
+plt.subplot(1, 2, 1)
+plt.imshow(image[0, :, :, 0], 'gray')
+plt.subplot(1, 2, 2)
+plt.imshow(output[0, :, :, 0], 'gray')
+plt.show()
+```
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/layer_apply_image.png?raw=true" caption="layer 적용 전 / 적용 후" %}
 
 <br>
 
