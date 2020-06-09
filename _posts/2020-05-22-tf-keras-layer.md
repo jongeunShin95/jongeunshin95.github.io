@@ -66,10 +66,11 @@ print(result)
 저번에 Convolution Layer에서 본 것처럼 해당 데이터들에서 특징을 추출하는 layer이다.<br>
 [Tensorflow 문서](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Conv2D)에서 보게되면 여러 파라미터들이 존재한다. 여기서 filter, kernel_size, strides, padding, activation에 대해 설정하여 사용해 볼 것이다. 여기서 파라미터에 대한 설명은 [Convolution Layer](https://jongeunshin95.github.io/blog/convolution-layer)에서 다루었고 filters의 파라미터에 대해서만 다르게 적용하여 사용해 볼 것이다.
 
+**기본적인 layer를 구성하는 코드**
+
 ```python
 tf.keras.layers.Conv2D(filters=3, kernel_size=(3, 3), strides=(1, 1), padding='SAME', activation='relu')
 ```
-다음은 기본적인 layer를 구성하는 코드이다. <br>
 filters의 경우 해당 layer를 통과한 후 몇개의 filter를 만드는지 결정한다. 한번 filters를 다르게 하여 layer를 통과시킨 후 결과를 보겠다. 또한 다음 예제들을 실행할 때 activation은 설정하지 않고 activation의 경우에는 따로 설정을 하도록 하겠다.
 
 **layer에 사용될 데이터 설정**
@@ -116,6 +117,52 @@ plt.show()
 ```
 
 {% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/layer_apply_image.png?raw=true" caption="layer 적용 전 / 적용 후" %}
+
+<br>
+
+#### tf.keras.layers.ReLU()
+
+---
+
+나오는 결과에 대하여 0보다 작은 경우에는 모두 0으로 만드는 Activation Function이다.
+
+**기본적인 형태**
+
+```python
+tf.keras.layers.ReLU()
+```
+
+위의 layer를 통하여 나온 output에 대하여 Relu함수를 적용시켜보겠다.
+
+**Relu 적용시키기 전**
+
+```python
+import numpy as np
+print(np.min(output), np.max(output))
+```
+
+    >>> (-312.53235, 187.89764)
+
+**Relu 적용시킨 후**
+```python
+relu = tf.keras.layers.ReLU()
+relu_output = relu(output)
+print(np.min(relu_output), np.max(relu_output))
+```
+
+    >>> (0.0, 187.89764) # 0 보다 작은 수는 다 0으로 치환되었다.
+
+**적용시킨 후 이미지 시각화**
+```python
+plt.subplot(1, 2, 2)
+plt.imshow(output[0, :, :, 0], 'gray')
+
+plt.subplot(1, 2, 1)
+plt.imshow(relu_output[0, :, :, 0], 'gray')
+plt.show()
+```
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/Relu_output.png?raw=true" caption="ReLU 적용 전 / 적용 후" %}
 
 <br>
 
