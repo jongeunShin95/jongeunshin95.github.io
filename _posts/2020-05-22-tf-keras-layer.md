@@ -120,7 +120,7 @@ plt.show()
 
 <br>
 
-#### tf.keras.layers.ReLU()
+#### tf.keras.layers.ReLU
 
 ---
 
@@ -163,6 +163,54 @@ plt.show()
 ```
 
 {% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/Relu_output.png?raw=true" caption="ReLU 적용 전 / 적용 후" %}
+
+<br>
+
+#### tf.keras.layers.MaxPool2D
+
+---
+
+Pooling의 경우 해당 데이터가 주어졌을 때 해당 구간에서 가장 큰 값들을 가져와서 합쳐놓는 것이다.
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/pooling.png?raw=true" caption="Pooling" %}
+
+즉, 정해진 구간 내에서 가장 큰값들을 가져오는 함수이다.
+
+**기본 형태**
+```python
+tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='SAME')
+```
+여기서 pool_size가 2x2만큼의 크기를 정해주는 것이고 strides는 얼만큼 그 구간을 옮겨 반복하는지를 정한다. strides의 경우 [Convolution Layer](https://jongeunshin95.github.io/blog/convolution-layer)에서도 다루었다.
+
+**MaxPool2D 적용 전**
+```python
+print(relu_output.shape)
+```
+
+    >>> TensorShape([1, 28, 28, 3])
+
+**MaxPool2D 적용 후**
+```python
+pool_layer = tf.keras.layers.MaxPool2D(pool_size=(2, 2), strides=(2, 2), padding='SAME')
+pool_output = pool_layer(relu_output)
+print(relu_output.shape)
+```
+
+    >>> TensorShape([1, 14, 14, 3])
+
+해당 데이터에서 큰 값들만 가져오기 때문에 shape의 크기가 반으로 줄어든 것을 볼 수 있다.
+
+**적용시킨 후 이미지 시각화**
+```python
+plt.subplot(1, 2, 1)
+plt.imshow(relu_output[0, :, :, 0], 'gray')
+
+plt.subplot(1, 2, 2)
+plt.imshow(pool_output[0, :, :, 0], 'gray')
+plt.show()
+```
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/pool_output.png?raw=true" caption="MaxPool2D 적용 전 / 적용 후" %}
 
 <br>
 
