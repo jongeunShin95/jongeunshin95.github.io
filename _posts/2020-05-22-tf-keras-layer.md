@@ -214,6 +214,32 @@ plt.show()
 
 <br>
 
+#### tf.keras.layers.Flatten
+
+---
+
+flatten의 경우에는 해당 n x m 의 데이터를 열벡터 형식으로 나열하는 것이다.
+
+**적용시키기 전 shape**
+```python
+print(pool_output.shape)
+```
+
+    >>> TensorShape([1, 14, 14, 3])
+
+**적용시킨 후 shape**
+```python
+layer = tf.keras.layers.Flatten()
+flatten = layer(pool_output)
+print(flatten.shape)
+```
+
+    >>> TensorShape([1, 588])
+
+보게 되면 TensorShape([1, 14, 14, 3])에서 14 * 14 * 3 = 588로 제대로 나오는 것을 확인할 수 있다.
+
+<br>
+
 ##### 참조
 
 ---
