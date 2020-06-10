@@ -1,6 +1,6 @@
 ---
 title: tf.keras layer
-tags: [Deep Learning, Convolution Layer, Feature Extraction, Classification]
+tags: [Deep Learning, Convolution Layer, Feature Extraction, Classification, Fully Connected]
 style: fill
 color: success
 description: tf.keras를 이용한 layer 구축
