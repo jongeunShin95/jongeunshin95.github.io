@@ -250,12 +250,26 @@ Dense의 경우에는 입출력에 관해 모두 연결을 해준다. 또한 이
 ```python
 layer = tf.keras.layers.Dense(32, activation='relu')
 dense = layer(flatten)
-dense.shape
+print(dense.shape)
 ```
 
     >>> TensorShape([1, 32])
 
 출력 결과를 보게되면 Flatten에서 나온 입력 588개에 대하여 32개의 출력으로 모두 연결을 시켰다.
+
+<br>
+
+#### tf.keras.Dropout
+
+---
+
+학습 데이터에 대해 너무 집중이 되다 보면 학습 데이터들은 잘 맞추지만 실제 데이터에 대해서는 못맞추는 경우가 발생하는데 이것이 Overfitting이다. 이 Overfitting을 방지하기 위하여 연결된 모든 학습 데이터에 대해 학습을 시키는 것이 아니라 몇 개의 연결을 끊어서 조금 더 낮은 가중치에 대한 연결에도 학습을 할 수 있게 하는 것이다.
+
+**Dropout 사용예시**
+```python
+layer = tf.keras.layers.Dropout(0.7)
+dropout = layer(dense)
+```
 
 <br>
 
