@@ -240,9 +240,29 @@ print(flatten.shape)
 
 <br>
 
+#### tf.keras.layers.Dense
+
+---
+
+Dense의 경우에는 입출력에 관해 모두 연결을 해준다. 또한 이 연결에 있어서 가중치가 있는데 가중치의 크기에 따라 입력 노드에 대해 출력 노드에 미치는 영향이 다르다.
+
+**Dense Layer 적용**
+```python
+layer = tf.keras.layers.Dense(32, activation='relu')
+dense = layer(flatten)
+dense.shape
+```
+
+    >>> TensorShape([1, 32])
+
+출력 결과를 보게되면 Flatten에서 나온 입력 588개에 대하여 32개의 출력으로 모두 연결을 시켰다.
+
+<br>
+
 ##### 참조
 
 ---
 
 * [https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/](https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/)
 * [https://tykimos.github.io/2017/01/27/Keras_Talk/](https://tykimos.github.io/2017/01/27/Keras_Talk/)
+* [https://tykimos.github.io/2017/01/27/MLP_Layer_Talk/](https://tykimos.github.io/2017/01/27/MLP_Layer_Talk/)
