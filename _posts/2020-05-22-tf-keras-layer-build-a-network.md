@@ -1,5 +1,5 @@
 ---
-title: tf.keras layer
+title: tf.keras.layer - Build a Network
 tags: [Deep Learning, Convolution Layer, Feature Extraction, Classification, Fully Connected]
 style: fill
 color: success
@@ -43,7 +43,7 @@ plt.imshow(image, 'gray')
 plt.show()
 ```
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/x_train.png?raw=true" caption="x_train[0] 이미지" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/tf_keras_layer_build_a_network/x_train.png?raw=true" caption="x_train[0] 이미지" %}
 
 
 **y_train의 데이터 보기**
@@ -116,7 +116,7 @@ plt.imshow(output[0, :, :, 0], 'gray')
 plt.show()
 ```
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/layer_apply_image.png?raw=true" caption="layer 적용 전 / 적용 후" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/tf_keras_layer_build_a_network/layer_apply_image.png?raw=true" caption="layer 적용 전 / 적용 후" %}
 
 <br>
 
@@ -162,7 +162,7 @@ plt.imshow(relu_output[0, :, :, 0], 'gray')
 plt.show()
 ```
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/Relu_output.png?raw=true" caption="ReLU 적용 전 / 적용 후" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/tf_keras_layer_build_a_network/Relu_output.png?raw=true" caption="ReLU 적용 전 / 적용 후" %}
 
 <br>
 
@@ -172,7 +172,7 @@ plt.show()
 
 Pooling의 경우 해당 데이터가 주어졌을 때 해당 구간에서 가장 큰 값들을 가져와서 합쳐놓는 것이다.
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/pooling.png?raw=true" caption="Pooling" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/tf_keras_layer_build_a_network/pooling.png?raw=true" caption="Pooling" %}
 
 즉, 정해진 구간 내에서 가장 큰값들을 가져오는 함수이다.
 
@@ -210,7 +210,7 @@ plt.imshow(pool_output[0, :, :, 0], 'gray')
 plt.show()
 ```
 
-{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/keras_layer/pool_output.png?raw=true" caption="MaxPool2D 적용 전 / 적용 후" %}
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/tf_keras_layer_build_a_network/pool_output.png?raw=true" caption="MaxPool2D 적용 전 / 적용 후" %}
 
 <br>
 
