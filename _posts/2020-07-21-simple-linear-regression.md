@@ -39,6 +39,35 @@ use_math: true
 
 <br>
 
+#### SSE(Error sum of Squares)
+
+---
+
+SSE는 오차들의 제곱 합을 나타낸다. 식으로 나타내면
+
+> $$ \sum_{i=1}^n e^2_i = \sum_{i=1}^n (y_i - \beta_0 - \beta_1x_1)^2  (\because Y = \beta_0 + \beta_1X + \varepsilon) $$
+
+과 같다. 이 SSE를 찾다가 보니 어떤 곳에서는 SSR, 또 다른 곳에서는 RSS라고 부르길래 용어가 너무 헷갈려서 따로 용어를 정리하였다. <br>
+
+* Error sum of Squares = SSE
+* Residual Sum of Squares = RSS
+* Sum of Squared Residuals = SSR
+
+또한 나중에 $ R^2 $를 공부하면서 또 다른 용어가 나오는데 헷갈리지 않기 위해 미리 정리하였다 <br>
+
+* Regression sum of Squares = SSR
+* Explained sum of Squares = SSE/ESS
+
+그리고 위 두개를 더한 값을 나타내는 용어도 있다.
+
+* Sum of Squares total = SST
+
+나는 여기서 SSE(Error sum of Squares), SSR(Regression sum of Squares), SST(Sum of Squeares total)를 사용할 것이다. 표를 이용하여 나타내면 다음과 같다.
+
+{% include elements/figure.html image="https://github.com/jongeunShin95/jongeunShin95.github.io/blob/master/assets/images/simple_linear_regression/SST_SSR_SSE.png?raw=true" caption="" %}
+
+<br>
+
 ##### 참조
 
 ---
@@ -46,3 +75,5 @@ use_math: true
 * [https://gentlej90.tistory.com/71](https://gentlej90.tistory.com/71)
 * [https://m.blog.naver.com/PostView.nhn?blogId=istech7&logNo=50152984368&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=istech7&logNo=50152984368&proxyReferer=https:%2F%2Fwww.google.com%2F)
 * [https://rk1993.tistory.com/m/entry/%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9Dlinear-regression-analysis?category=880112](https://rk1993.tistory.com/m/entry/%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9Dlinear-regression-analysis?category=880112)
+* [https://365datascience.com/sum-squares/](https://365datascience.com/sum-squares/)
+* [https://igija.tistory.com/256](https://igija.tistory.com/256)
