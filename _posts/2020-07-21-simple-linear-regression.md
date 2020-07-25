@@ -68,6 +68,27 @@ SSE는 오차들의 제곱 합을 나타낸다. 식으로 나타내면
 
 <br>
 
+#### Least Square Method
+
+---
+
+우리가 구해야되는 직선은 데이터에 대해 오차가 적어야 한다. 즉, SSE를 최소화시키는 기울기와 절편을 구해야 된다. 이를 위하여 SSE의 최소를 구하기 위해서는 미분을 하여 0이 되는 지점을 찾는 것이다.
+SSE의 식에서 변수 $ \beta_0, \beta_1 $에 대해 편미분을 하게 되면 나오는 두 식은 다음과 같다.
+
+> $ {\partial L \over \partial\beta_0} = -2\sum_{i=1}^n (y_i - \beta_0 - \beta_1x_i) = 0 $
+
+
+> $ {\partial L \over \partial\beta_1} = -2\sum_{i=1}^n (y_i - \beta_0 - \beta_1x_i)x_i = 0 $
+
+위의 식을 이용하여 우리가 구해야되는 기울기와 절편에 대한 식은 다음과 같다.
+
+> $ \hat\beta_1 = {\sum_{i=1}^n(x_i - \bar{x})(y_i - \bar{y}) \over \sum_{i=1}^n(x_i - \bar{x})^2} $
+
+> $ \hat\beta_0 = \bar{y} - \hat\beta_1\bar{x} $
+
+위 식이 도출되는 과정은 너무 수학적이라 조금 더 공부해보고 추가해야되겠다...
+<br>
+
 ##### 참조
 
 ---
