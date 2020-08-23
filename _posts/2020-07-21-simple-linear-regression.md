@@ -1,5 +1,5 @@
 ---
-title: Simple Linear Regression
+title: Simple Linear Regression(다시 공부하고 작성하기)
 tags: [Deep Learning, Linear Function, regression, supervised learning]
 style: fill
 color: dark
@@ -45,7 +45,7 @@ use_math: true
 
 SSE는 오차들의 제곱 합을 나타낸다. 식으로 나타내면
 
-> $$ \sum_{i=1}^n e^2_i = \sum_{i=1}^n (y_i - \beta_0 - \beta_1x_1)^2  (\because Y = \beta_0 + \beta_1X + \varepsilon) $$
+$ \sum_{i=1}^n e^2_i = \sum\_{i=1}^n (y_i - \beta_0 - \beta_1x_1)^2  (\because Y = \beta_0 + \beta_1X + \varepsilon) $
 
 과 같다. 이 SSE를 찾다가 보니 어떤 곳에서는 SSR, 또 다른 곳에서는 RSS라고 부르길래 용어가 너무 헷갈려서 따로 용어를 정리하였다. <br>
 
