@@ -43,7 +43,7 @@ use_math: true
 
 ---
 
-SSE는 오차들의 제곱 합을 나타낸다. 식으로 나타내면
+SSE는 오차들의 제곱 합을 나타낸다. 우리는 이 SSE가 최소가 되도록 만들어야 된다. 우선 식으로 나타내면
 
 $ \sum_{i=1}^n e^2_i = \sum\_{i=1}^n (y_i - \beta_0 - \beta_1x_1)^2  (\because Y = \beta_0 + \beta_1X + \varepsilon) $
 
