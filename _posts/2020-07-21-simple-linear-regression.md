@@ -1,5 +1,5 @@
 ---
-title: Simple Linear Regression(다시 공부하고 작성하기)
+title: Simple Linear Regression
 tags: [Deep Learning, Linear Function, regression, supervised learning]
 style: fill
 color: dark
@@ -89,6 +89,26 @@ SSE의 식에서 변수 $ \beta_0, \beta_1 $에 대해 편미분을 하게 되�
 위 식이 도출되는 과정은 너무 수학적이라 조금 더 공부해보고 추가해야되겠다...
 <br>
 
+#### R-Square
+
+---
+
+먼저 R-Square 전에 MSE(Mean Squared Error)도 있는데 이는 SSE를 표준화한 개념이다. 수식으로는 다음과 같다.
+
+> $ MSE = $ $ 1 \over n - 2 $ $SSE$
+
+우리는 이때까지 구한 SST, SSE, SSR을 통해 $R^2$를 구할 수 있다. 여기서 SSE의 경우에는 입력 변수로 출력 변수를 설명할 수 없는 변동성이고
+SSR의 경우에는 입력 변수로 출력 변수를 설명할 수 있는 변동성이다. SSR이 커야 해당 입력 변수가 출력 변수에 대해 큰 영향을 준다고 설명할 수 있다.
+
+$R^2$를 구하는 식으로는 다음과 같다.
+
+> $R^2$ = $SSR \over SST$
+
+즉, 이 $R^2$가 1에 가까울 수록 선형회귀 모형의 설명력을 표현하는 것이 높다고 볼 수 있다.
+
+
+<br>
+
 ##### 참조
 
 ---
@@ -98,3 +118,4 @@ SSE의 식에서 변수 $ \beta_0, \beta_1 $에 대해 편미분을 하게 되�
 * [https://rk1993.tistory.com/m/entry/%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9Dlinear-regression-analysis?category=880112](https://rk1993.tistory.com/m/entry/%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9Dlinear-regression-analysis?category=880112)
 * [https://365datascience.com/sum-squares/](https://365datascience.com/sum-squares/)
 * [https://igija.tistory.com/256](https://igija.tistory.com/256)
+* [https://jihongl.github.io/2017/09/16/Rsquared/](https://jihongl.github.io/2017/09/16/Rsquared/)
